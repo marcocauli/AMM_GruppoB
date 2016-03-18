@@ -15,33 +15,20 @@ and open the template in the editor.
     </head>
     <body>
         
-        <nav><a href="descrizione.html"> Torna alla Descrizione </a></nav>
+        <nav><a href="descrizione.html"> Torna alla Descrizione </a>
+             <a href="cliente.html"> Vai alla pagina del Cliente </a>
+             <a href="venditore.html"> Torna alla pagina del Venditore </a>
+        </nav>
         <div>
-        <form action="venditore.html" method="post">
-            <h1> AREA VENDITORE: </h1>
+            <h1> Sezione di Log-in: </h1>
             
             <label for="idv"> Inserire id:</label>
             <input type="text" name="idv"
              id="idv" value=""/>
-            <label for="pwv"> Inserire password:</label>
-            <input type="password" name="pwv"
+            <label for="pw"> Inserire password:</label>
+            <input type="password" name="pw"
              id="pwv" value=""/>
             <input type="submit" value="Invia Dati">
-        </form>
-        </div>
-        <div>
-        <form action="cliente.html" method="post">
-            <h1> AREA CLIENTE: </h1>
-            
-            <label for="idc"> Inserire id:</label>
-            <input type="text" name="idc"
-             id="idc" value=""/>
-            <label for="pwc"> Inserire password:</label>
-            <input type="password" name="pwc"
-             id="pwc" value=""/>
-            <input type="submit" value="Invia Dati">
-            
-        </form>
         </div>
     </body>
 </html>
