@@ -21,20 +21,30 @@ and open the template in the editor.
         </nav>
         <form action="venditore.html" method="post">
             <article>
+                <section>
                 <label for="name"> Inserire nome oggetto:</label>
                 <input type="text" name="name"
                  id="name" value=""/>
+                </section>
+                <section>
                 <label for="url"> Inserire URL dell'immagine dell'oggetto:</label>
-                <input type="file" name="url"
+                <input type="url" name="url"
                  id="url"/>
+                </section>
+                <section>
                 <label for='descrizione'> Inserire descrizione dell'oggetto:</label>
                 <textarea rows='5' cols='40' name='descrizione' id='descrizione'></textarea>
+                </section>
+                <section>
                 <label for='prezzo'> Inserire il prezzo dell'oggetto:</label>
                 <input type="number" name="prezzo"
                  id="prezzo" value=""/>
+                </section>
+                <section>
                 <label for='npezzi'> Inserire il numero dei pezzi in vendita:</label>
                 <input type="number" name="npezzi"
                  id="npezzi" value=""/>
+                </section>
                 <input type="submit" value="Aggiungi Oggetto">
             </article>
         </form>
