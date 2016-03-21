@@ -16,38 +16,40 @@ and open the template in the editor.
     <body>
         <h1> Area Venditore: </h1>
         <nav> 
-            <p> Ritorno alla pagina di Descrizione: <a href='descrizione.html'> Descrizione</a></p>
-            <p> Ritorno alla pagina di Log-in <a href='login.html'> Log-in</a></p>
+            <ul>
+            <li> Ritorno alla pagina di Descrizione: <a href='descrizione.html'> Descrizione</a></li>
+            <li> Ritorno alla pagina di Log-in <a href='login.html'> Log-in</a></li>
+            </ul>
         </nav>
         <form action="venditore.html" method="post">
-            <article>
-                <section>
+                <div>
                     <label for="name"> Inserire nome oggetto:</label>
                     <input type="text" name="name"
                          id="name" value=""/>
-                </section>
-                <section>
+                </div>
+                <div>
                     <label for="url"> Inserire URL dell'immagine dell'oggetto:</label>
                     <input type="url" name="url"
                         id="url"/>
-                </section>
-                <section>
+                </div>
+                <div>
                     <label for='descrizione'> Inserire descrizione dell'oggetto:</label>
                     <textarea rows='5' cols='40' name='descrizione' id='descrizione'></textarea>
-                </section>
-                <section>
+                </div>
+                <div>
                     <label for='prezzo'> Inserire il prezzo dell'oggetto:</label>
                     <input type="number" name="prezzo"
                         id="prezzo" value=""/>
-                </section>
-                <section>
+                </div>
+                <div>
                     <label for='npezzi'> Inserire il numero dei pezzi in vendita:</label>
                     <input type="number" name="npezzi"
                         id="npezzi" value=""/>
-                </section>
-                <input type="submit" value="Aggiungi Oggetto">
-            </article>
-        </form>
+                </div>
+                <div>
+                    <input type="submit" value="Aggiungi Oggetto">
+                </div>
+            </form>
         
     </body>
 </html>
