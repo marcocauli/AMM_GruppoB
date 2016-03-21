@@ -14,23 +14,22 @@ and open the template in the editor.
         <meta name="keywords" content="login, utente, cliente, venditore">
     </head>
     <body>
-        
+        <h1> Sezione di Log-in: </h1>
         <nav>
-             <a href="descrizione.html"> Torna alla Descrizione </a>
-             <a href="cliente.html"> Vai alla pagina del Cliente </a>
-             <a href="venditore.html"> Vai alla pagina del Venditore </a>
+            <ul>
+                <li><a href="descrizione.html"> Torna alla Descrizione </a></li>
+                <li><a href="cliente.html"> Vai alla pagina del Cliente </a></li>
+                <li><a href="venditore.html"> Vai alla pagina del Venditore </a></li>
+            </ul>
         </nav>
-        <article>
-            <h1> Sezione di Log-in: </h1>
-            <section>
-                <label for="idv"> Inserire id:</label>
-                <input type="text" name="idv"
+        <div>
+            <label for="idv"> Inserire id:</label>
+            <input type="text" name="idv"
                     id="idv" value=""/>
-                <label for="pw"> Inserire password:</label>
-                <input type="password" name="pw"
-                    id="pwv" value=""/>
-                <input type="submit" value="Invia Dati">
-            </section>
-        </article>
+            <label for="pw"> Inserire password:</label>
+            <input type="password" name="pw"
+                    id="pw" value=""/>
+            <input type="submit" value="Invia Dati">
+        </div>
     </body>
 </html>
