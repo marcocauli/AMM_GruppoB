@@ -1,0 +1,391 @@
+body {
+  background-image: url("../img/sfondo.jpg");
+  font-family: "Arial", "Verdana", serif ;
+  
+}
+h1{
+    font-size: 2em;
+    color:black;
+    text-align: center;
+    font-style: italic;
+}
+/* proprietà dei link */
+a:link, a:visited{
+	color: black;
+        text-decoration:none;
+}
+a:visited{
+    color: blueviolet;
+    text-decoration:none;
+}
+a:hover{
+	color: red;
+        font-style: italic;
+}
+
+/* creazione menu */
+ul#menu {
+    list-style:none;
+    width: 100%;
+    position:relative;
+    text-align: center;
+    padding-left:0px;
+}
+#menu li{
+  font-weight: bold;
+  display:inline-block;
+  line-height: 50px;
+  height: 40px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin-top: 4px;
+  text-decoration: none;
+}
+#menu li a:hover, #menu li a.active {
+  background-color: lightsteelblue;
+  
+}
+
+/* sidebar */
+#sidebar
+{
+    font-weight: bold;
+    float:left;
+    height: 100%;
+}
+#sidebar li{
+    display:block;
+    margin: 50px;
+}
+
+#Staff{
+    list-style:none;
+}
+#content{
+    color:black;
+    text-align: left;
+    width: 75%;
+}
+
+#login{
+    position:relative;
+    display:block;
+}
+#label1{
+    display: block;
+    text-align: center;
+}
+
+#label2{
+    display: block;
+    text-align: center;
+}
+
+#Invio1{
+    border-color:grey;
+    border-style:inset;
+}
+
+#tabellacliente{
+    margin-top: 15%;
+    padding-left: 30%;
+    text-align: center;
+    color: black;
+    display: block;
+    width: 100%;
+    
+}
+
+#tabellacliente td{
+        min-width: 100px;
+        max-width: 100px;
+}
+
+#tabellacliente th{
+    color:red;
+    font-family: sans-serif;
+    font-style:normal;
+}
+
+#tabellacliente tr{
+    color:black;
+    font-family: serif;
+    font-style:normal;
+    
+    
+}
+#AreaVenditore{
+    display: table-caption;
+    position:absolute;
+}
+#AreaVenditore label ,#AreaVenditore input{
+    display:block;
+}
+    @media(min-width: 1024px){
+        #header{
+            width: 100%;
+            float:left;
+            padding: 20px 20px 20px 20px;
+            background:grey;
+        }
+        #menu{
+            width: 100%;
+            float:left;
+        }
+        #content{
+            width: 75%;
+            float:top;
+            margin-left: 300px;
+            padding-top: 205px;
+        }
+        #sidebar{
+            width: 270px;
+            float:left;
+        }
+        sidebar{
+            margin-right:65%;
+        }
+        #login{
+            
+            margin-left:42%;
+            margin-right:44%;
+            top:175px;
+            height: 100px;
+        }
+        
+        #label1{
+            margin-bottom: 5px;
+        }
+        #idv{
+            margin-bottom: 15px;
+        }
+        #label2{
+            margin-bottom: 5px;
+        }
+        #Invio1{
+            border-width: 1px;
+            margin:5%;
+            margin-left: 25%;
+        }
+        
+        #tabellacliente{
+            margin-top: 15%;
+            padding-left: 30%;
+            text-align: center;
+            color: black;
+            display: block;
+            width: 100%;
+    
+        }  
+        #tabellacliente tr:nth-child(even) {
+	background-color: lightgray;
+    }
+    
+        #AreaVenditore{
+            top: 35%;
+            left: 50%;
+            margin-left: -15%;
+            text-align: center;
+            
+        }
+        #AreaVenditore label ,#AreaVenditore input{
+            margin-bottom: 5%;
+            border-radius: 50px;
+            width: 100%;
+        }
+    }
+    @media (min-width: 480px) and (max-width: 1024px) {
+ 
+    #header {
+        width: 100%;
+        float:left;
+        padding: 20px 20px 20px 20px;
+    }
+    #content{
+        width: 55%;
+        margin-left: 320px;
+    }
+    ul#menu{
+        width:100%;
+        padding-left: 0px;
+    }
+    sidebar{
+        width:25%;
+        float:left;
+    }
+    #login{
+            
+            margin-left:42%;
+            margin-right:44%;
+            top:25%;
+        }
+        
+        #label1{
+            margin-bottom: 5px;
+        }
+        #idv{
+            margin-bottom: 15px;
+            margin-left: -25%;
+        }
+        #label2{
+            margin-bottom: 5px;
+        }
+        #pw{
+            margin-left:-25%;
+        }
+        #Invio1{
+            border-width: 1px;
+            margin:5%;
+            margin-left: 25%;
+            margin-top: 15px;
+        }
+        
+        #tabellacliente{
+            margin-top: 15%;
+            padding-left: 30%;
+            margin-left: -20%;
+            text-align: center;
+            color: black;
+            display: block;
+            width: 100%;
+    
+        }
+        #tabellacliente tr:nth-child(even) {
+	background-color: lightgray;
+        }
+        
+        #AreaVenditore{
+            top: 35%;
+            left: 50%;
+            margin-left: -20%;
+            
+        }
+        #AreaVenditore label ,#AreaVenditore input{
+            margin-bottom: 5%;
+            border-radius: 50px;
+            width: 100%;
+        }
+    }
+    @media (max-width: 480px) {
+ 
+    body{
+        padding:10px;
+    }
+    #header         {
+        width:100%;
+        padding: 20px 0 20px 0px;
+    }
+    ul#menu{
+        width:100%;
+        padding-left: 0px;
+        display:block;
+        
+    }
+    #content {
+        width:100%;
+        float:left;
+    }
+    #sidebar {
+        display: inline-block;
+    }
+    
+    #login{
+            
+            margin-left:42%;
+            margin-right:44%;
+            top:25%;
+        }
+        #label1{
+            margin-bottom: 5px;
+        }
+        #idv{
+            margin-bottom: 15px;
+            margin-left: -120%;
+        }
+        #label2{
+            margin-bottom: 5px;
+        }
+        #pw{
+            margin-left:-120%;
+        }
+        #Invio1{
+            border-width: 1px;
+            margin:5%;
+            margin-left: 0%;
+            margin-top: 15px;
+        }
+        
+        #tabellacliente{
+            margin-top: 15%;
+            padding-left: 30%;
+            margin-left: -20%;
+            text-align: center;
+            color: black;
+            display: block;
+            width: 100%;
+        }
+        
+
+        table, thead, tbody, th, td, tr {
+        display: block;
+        }
+        
+        
+
+        table tr td{
+        border:0;
+        }
+        
+
+        thead tr {
+        position: absolute;    /* Nascondiamo la testata */
+        top: -9999px;
+        left: -9999px;
+        }
+        
+        
+
+        td {
+        position: relative;     /* Creiamo lo spazio per l'intestazione */
+        padding-left: 50%;
+        border:0;
+        }
+        
+        
+
+        td:before { 	
+        position: absolute;			/* Creiamo le altre celle per la descrizione */
+        top: 0px;
+        left: 0px;
+        width: 100%;  
+        font-weight:bold;
+        line-height:0px;
+        top:5px;
+        }
+        
+        
+
+        td:nth-of-type(1):before { content: "Oggetto"; } /* inseriamo l'etichetta per ciascuna cella con il selettore nth-of-type */
+        td:nth-of-type(2):before { content: "Foto"; }
+        td:nth-of-type(3):before { content: "Pezzi"; }
+        td:nth-of-type(4):before { content: "Sito Web"; }
+        td:nth-of-type(5):before { content: "Prezzo"; }
+        td:nth-of-type(6):before { content: "Aggiungi al Carrello"; }
+        
+        #AreaVenditore{
+            top: 40%;
+            
+        }
+        #AreaVenditore label ,#AreaVenditore input{
+            margin-bottom: 5%;
+            border-radius: 50px;
+            text-align: center;
+            width: 100%;
+            margin-left: auto;
+        }
+
+}
+    

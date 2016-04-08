@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>LOG-IN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marco Cauli">
+        <meta name="description" content="Area di login per venditori e clienti">
+        <meta name="keywords" content="login, utente, cliente, venditore">
+    </head>
+    <body>
+        <div>
+        <h1 id="header"> Sezione di Log-in: </h1>
+        <!-- AREA DI NAVIGAZIONE IMPLEMENTATA CON LISTA-->
+        <nav>
+            <ul id="menu">
+                <li><a href="descrizione.html"> Descrizione </a></li>
+                <li><a href="cliente.html"> Cliente </a></li>
+                <li><a href="venditore.html"> Venditore </a></li>
+            </ul>
+        </nav>
+        <!-- AREA DI LOGIN CON RICHIESTA ID E PW, INVIO CON SUBMIT  -->
+        <div id="login">
+            <label id="label1" for="idv"> Inserire id:</label>
+            <input type="text" name="idv"
+                    id="idv" value=""/>
+            <label id="label2" for="pw"> Inserire password:</label>
+            <input type="password" name="pw"
+                    id="pw" value=""/>
+            <input id="Invio1" type="submit" value="Invia Dati">
+        </div>
+        </div>
+    </body>
+</html>
