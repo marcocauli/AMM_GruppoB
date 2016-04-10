@@ -1,29 +1,41 @@
+/* imposto l'immagine di sfondo, imposto il font per il testo,ripetizione dello
+sfondo e decido di coprire tutta la pagina con 
+lo sfondo*/
 body {
   background-image: url("../img/sfondo.jpg");
   font-family: "Arial", "Verdana", serif ;
+  background-repeat: repeat;
+    background-size: cover;
   
 }
+/* imposto le proprieta del font sul titolo, cambio il colore, allineo il testo 
+al centro, imposto un colore di sfondo e annullo il margine inferiore*/
 h1{
     font-size: 2em;
-    color:black;
+    color:aquamarine;
     text-align: center;
     font-style: italic;
+    background-color: darkblue;
+    margin-bottom: 0px;
+    
 }
 /* proprietà dei link */
-a:link, a:visited{
-	color: black;
+a:link{
+	color:aquamarine;
         text-decoration:none;
 }
+/* proprietà dei link visitati*/
 a:visited{
-    color: blueviolet;
+    color: white;
     text-decoration:none;
 }
+/*proprietà dei link quando il mouse viene passato sopra*/
 a:hover{
 	color: red;
         font-style: italic;
 }
 
-/* creazione menu */
+/* ordinamento del menu*/
 ul#menu {
     list-style:none;
     width: 100%;
@@ -31,6 +43,8 @@ ul#menu {
     text-align: center;
     padding-left:0px;
 }
+
+/* impostazioni sul testo del menu */
 #menu li{
   font-weight: bold;
   display:inline-block;
@@ -38,57 +52,73 @@ ul#menu {
   height: 40px;
   width: 70px;
   text-align: center;
-  text-decoration: none;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-left: 10px;
   margin-top: 4px;
-  text-decoration: none;
 }
+/* impostazioni sulla visualizzazione del menu quando viene passato il mouse 
+sopra*/
 #menu li a:hover, #menu li a.active {
   background-color: lightsteelblue;
   
+  
 }
 
-/* sidebar */
+
+/* impostazioni sidebar, colore di sfondo, posizione, altezza, bordi */
 #sidebar
 {
-    font-weight: bold;
     float:left;
     height: 100%;
+    background-color: #000099;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: black;
+    padding-left: 0px;
 }
+/* impostazioni sui link interni alla sidebar */
+#LinkInterni{
+    font-size:130%;
+    color:aquamarine;
+    margin:0px 0px 0px 0px;
+    
+}
+/* impostazioni sui link contenuti nella lista della sidebar*/
 #sidebar li{
     display:block;
-    margin: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
-#Staff{
-    list-style:none;
-}
+/* impostazioni del contenuto principale della pagina descrizione*/
 #content{
     color:black;
     text-align: left;
     width: 75%;
 }
-
+/* impostazioni sulla parte relativa al login, posizione e impostazioni testo*/
 #login{
-    position:relative;
+    position:absolute;
     display:block;
 }
+/*impostazioni sulla label per l'id'*/
 #label1{
     display: block;
     text-align: center;
 }
-
+/*impostazioni sulla label per la pw*/
 #label2{
     display: block;
     text-align: center;
 }
-
+/* impostazioni sul testo d'invio */
 #Invio1{
     border-color:grey;
     border-style:inset;
 }
 
+/*impostazioni sulla tabella in pagina cliente, colore del testo, margini,
+tipo di visualizzazione*/
 #tabellacliente{
     margin-top: 15%;
     padding-left: 30%;
@@ -98,49 +128,72 @@ ul#menu {
     width: 100%;
     
 }
-
+/*impostazioni sulla lunghezza delle celle della tabella*/
 #tabellacliente td{
         min-width: 100px;
         max-width: 100px;
 }
-
+/*impostazioni sulle celle header della tabella'*/
 #tabellacliente th{
     color:red;
     font-family: sans-serif;
     font-style:normal;
 }
-
+/*impostazioni sulle celle della tabella*/
 #tabellacliente tr{
     color:black;
     font-family: serif;
     font-style:normal;
-    
-    
 }
+
+/*impostazioni sul form dell'area del venditore,
+tipo di visualizzazione, posizione, tipo, colore e forma dei bordi, colore del
+contenuto*/
 #AreaVenditore{
     display: table-caption;
     position:absolute;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: darkblue;
+    background-color: darkblue;
+    color: aquamarine;
 }
+/*tipo di display delle etichette e dei campi di input nell'areaVenditore'*/
 #AreaVenditore label ,#AreaVenditore input{
     display:block;
 }
+/*visualizzazione per dispositivi con piu di 1024px(PC-Desktop)*/
     @media(min-width: 1024px){
-        #header{
+        #header{/*impostazioni sull'header della paginaa
+                 lunghezza, posizione, paddig, colore di sfondo, colore del testo
+                 font, misura del font e margini*/
             width: 100%;
             float:left;
-            padding: 20px 20px 20px 20px;
-            background:grey;
+            padding: 20px 0px 20px 0px;
+            background:darkblue;
+            color:aquamarine;
+            font-family: "Arial", "Times New Roman", serif ;
+            font-size:-webkit-xxx-large;
+            margin-bottom: 0px;
         }
+        /* impostazioni sul menu, lunghezza, posizione, margini, sfondo,
+            stile grandezza e colore dei bordi*/
         #menu{
             width: 100%;
             float:left;
-        }
+            margin-top:0px;
+            background-color:#000099;
+            border-style:groove;
+            border-top-color: black;
+            border-width: 3px 0px 0px 0px;
+            
+        }/*impostazioni sul contenuto, lunghezza, posizione, margini e padding*/
         #content{
             width: 75%;
             float:top;
             margin-left: 300px;
             padding-top: 205px;
-        }
+        }/*impostazioni sulla sidebar*/
         #sidebar{
             width: 270px;
             float:left;
@@ -148,42 +201,76 @@ ul#menu {
         sidebar{
             margin-right:65%;
         }
+        /*impostazioni sul form di login, margini, posizione, altezza,padding, 
+        stile dei bordi,colore di sfondo, dei bordi e del testo*/
         #login{
             
             margin-left:42%;
             margin-right:44%;
-            top:175px;
             height: 100px;
+            border-style: groove;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            left: 40%;
+            top:35%;
+            border-color: darkblue;
+            border-radius: 20px;
+            background-color: darkblue;
+            color:aquamarine;
         }
-        
+        /*lunghezza minima per le varie pagine*/
+        #paginaLogin{
+            min-height: 900px;
+        }
+        #paginaCliente{
+            min-height: 900px;
+        }
+        #paginaVenditore{
+        min-height:900px;
+        }
+        /* margini per la label dell'id'*/
         #label1{
             margin-bottom: 5px;
         }
+        /*margini e lunghezza per l'input per l'id' */
         #idv{
             margin-bottom: 15px;
+            width: 100%;
         }
-        #label2{
-            margin-bottom: 5px;
+        /*lunghezza per l'input della pw'*/
+        #pw{
+            width: 100%;
         }
+        /*margini per il tasto d'invio'*/
         #Invio1{
-            border-width: 1px;
-            margin:5%;
-            margin-left: 25%;
+            margin-left: 35%;
         }
-        
+        /*impostazioni per la tabella del cliente, margini, padding, allineamento
+        del testo, colore del testo, tipo di visualizzazione del testo, lunghezza
+        della tabella*/
         #tabellacliente{
             margin-top: 15%;
             padding-left: 30%;
             text-align: center;
             color: black;
             display: block;
-            width: 100%;
+            width: auto;
     
         }  
+        /*colore dei campi colorati della tabella se pari o dispari*/
         #tabellacliente tr:nth-child(even) {
-	background-color: lightgray;
+	background-color: royalblue;
+        }
+        #tabellacliente tr:nth-child(odd) {
+	background-color: darkblue;
+        color:aquamarine;
+        
     }
-    
+        /*impostazioni sull'area del venditore'*/
         #AreaVenditore{
             top: 35%;
             left: 50%;
@@ -191,136 +278,251 @@ ul#menu {
             text-align: center;
             
         }
+        /*impostazioni sulle etichette dell'areaVenditore e sugli input
+        margini, bordi e lunghezza*/
         #AreaVenditore label ,#AreaVenditore input{
             margin-bottom: 5%;
             border-radius: 50px;
             width: 100%;
         }
     }
+    
+    /*impostazioni per visualizzazione tra 480px e 1024px*/
     @media (min-width: 480px) and (max-width: 1024px) {
- 
+        /*impostazioni sull'header, lunghezza, posizione, padding, colore di 
+        sfondo, colore del testo, tipo di font, grandezza del font e margini*/
     #header {
-        width: 100%;
-        float:left;
-        padding: 20px 20px 20px 20px;
+            width: 100%;
+            float:left;
+            padding: 20px 0px 20px 0px;
+            background:darkblue;
+            color:aquamarine;
+            font-family: "Arial", "Times New Roman", serif ;
+            font-size:-webkit-xxx-large;
+            margin-bottom: 0px;
     }
+    /*altezze minime per le pagine*/
+    #paginaLogin{
+        min-height:1024px;
+    }
+    #paginaVenditore{
+        min-height:1024px;
+    }
+    #paginaCliente{
+            min-height: 1024px;
+    }
+    /*impostazioni sul menu, lunghezza, posizione, margini superiore, colore di 
+    sfondo, stile dei bordi, colore dei bordi, grandezza dei bordi(solo superiore)*/
+    #menu{
+            width: 100%;
+            float:left;
+            margin-top:0px;
+            background-color:#000099;
+            border-style:groove;
+            border-top-color: black;
+            border-width: 3px 0px 0px 0px;
+            
+        }
+        /*impostazioni sul contenuto e sui margini*/
     #content{
         width: 55%;
         margin-left: 320px;
     }
+    /*impostazioni sul menu, lunghezza e padding*/
     ul#menu{
         width:100%;
         padding-left: 0px;
     }
+    /*impostazioni sulla sidebar, lunghezza e posizione*/
     sidebar{
         width:25%;
         float:left;
     }
+    /*impostazioni sul login, bordi, padding, margini, posizione, sui bordi:
+        colore, angoli; colore di sfondo e colore del testo*/
     #login{
-            
-            margin-left:42%;
-            margin-right:44%;
+           border-style: groove;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            left: 30%;
             top:25%;
+            border-color: darkblue;
+            border-radius: 20px;
+            background-color: darkblue;
+            color:aquamarine;
         }
-        
+        /*impostazioni sulla label per l'id'*/
         #label1{
             margin-bottom: 5px;
         }
+        /*impostazioni per l'input dell'id, margini e lunghezza'*/
         #idv{
             margin-bottom: 15px;
-            margin-left: -25%;
+            width: 100%;
         }
+        /*impostazioni sulla label per la pw,margini*/
         #label2{
             margin-bottom: 5px;
         }
+        /*impostazioni sull'input della pw,lunghezza*/
         #pw{
-            margin-left:-25%;
+            width: 100%;
         }
+        /*impostazioni sul bottone d'invio, bordi, margini*/
         #Invio1{
             border-width: 1px;
             margin:5%;
             margin-left: 25%;
             margin-top: 15px;
         }
-        
+        /*impostazioni sulla tabella del cliente, margini, padding, allineamento
+        del testo, colore del testo, tipo di visualizzazione, lunghezza*/
         #tabellacliente{
             margin-top: 15%;
-            padding-left: 30%;
-            margin-left: -20%;
+            padding-left: 15%;
             text-align: center;
             color: black;
             display: block;
-            width: 100%;
+            width: auto;
     
         }
+        /*impostazioni sui colori della tabella per pari e per dispari*/
         #tabellacliente tr:nth-child(even) {
-	background-color: lightgray;
+	background-color: royalblue;
         }
+        #tabellacliente tr:nth-child(odd) {
+	background-color: darkblue;
+        color:aquamarine;
         
+        /*impostazioni sull'area del venditore, posizione, margini*/}
         #AreaVenditore{
             top: 35%;
             left: 50%;
             margin-left: -20%;
             
         }
+        /*impostazioni sulle label e dell'input del venditore, margini, bordi, 
+        lunghezza*/
         #AreaVenditore label ,#AreaVenditore input{
             margin-bottom: 5%;
             border-radius: 50px;
             width: 100%;
         }
     }
+    /*impostazioni per visualizzazione massima di lunghezza di 480px*/
     @media (max-width: 480px) {
- 
+        /*impostaioni sul body, padding*/
     body{
         padding:10px;
     }
-    #header         {
-        width:100%;
-        padding: 20px 0 20px 0px;
+    /*impostazioni sull'header, lunghezza, posizione, padding, colore di sfondo,
+    colore del testo, font, grandezza font,margini*/
+        #header{
+            width: 100%;
+            float:left;
+            padding: 20px 0px 20px 0px;
+            background:darkblue;
+            color:aquamarine;
+            font-family: "Arial", "Times New Roman", serif ;
+            font-size:-webkit-xxx-large;
+            margin-bottom: 0px;
     }
+    /*impostazioni sul menu, lunghezza, posizione, margini, colore di sfondo, 
+    stile dei bordi,colore dei bordi e grandezza dei bordi,allineamento del testo
+    */
+    #menu{
+            width: 100%;
+            float:left;
+            margin-top:0px;
+            background-color:#000099;
+            border-style:groove;
+            border-top-color: black;
+            border-width: 3px 0px 0px 0px;
+            text-align: center;
+    }
+    /*altezze minime per le varie pagine*/
+    #paginaLogin{
+        min-height:1024px;
+    }
+    #paginaVenditore{
+        min-height:1024px;
+    }
+    #paginaCliente{
+            min-height: 1024px;
+    }
+    /*impostazioni sul contenuto del menu, lunghezza, padding, tipo di visualizzazione
+    */
     ul#menu{
         width:100%;
         padding-left: 0px;
         display:block;
         
     }
+    /*impostazioni sul contenuto della pagina, lunghezza, posizione*/
     #content {
         width:100%;
         float:left;
     }
+    /*impostazioni sulla sidebar, tipo di visualizzazione*/
     #sidebar {
         display: inline-block;
     }
-    
+    /*impostazioni sulla scheda di login,margini, posizione, stile dei bordi,
+    padding, arrotondamento dei bordi, colore dei bordi, margini, posizione, 
+    colore di sfondo, colore del testo*/
     #login{
             
-            margin-left:42%;
-            margin-right:44%;
-            top:25%;
+            margin-left:30%;
+            margin-right:30%;
+            top:50%;
+            border-style: ridge;
+            padding-left: 1px;
+            padding-top: 1px;
+            padding-right: 1px;
+            padding-bottom: 1px;
+            border-radius: 10px;
+            border-color: darkblue;
+            margin-left: auto;
+            margin-right: auto;
+            left: 15%;
+            background-color: darkblue;
+            color:aquamarine;
         }
+        /*impostazioni sulla label per l'id, margini*/
         #label1{
             margin-bottom: 5px;
         }
+        /*impostazioni sull'input dell'id, margini, lunghezza*/
         #idv{
             margin-bottom: 15px;
-            margin-left: -120%;
+            margin-left: 0%;
+            width: 98%;
         }
+        /*impostazioni sulla label per la pw, margini*/
         #label2{
             margin-bottom: 5px;
         }
+        /*impostazioni per l'input della pw, margini, lunghezza*/
         #pw{
-            margin-left:-120%;
+            margin-left:0%;
+            width: 98%;
         }
+        /*impostazioni per il bottone d'invio,bordi, margini*/
         #Invio1{
             border-width: 1px;
             margin:5%;
             margin-left: 0%;
             margin-top: 15px;
         }
-        
+        /*impostazioni per la tabellacliente, margini, padding, allineamento del
+        testo, colore dl testo, tipo di visualizzazione, lunghezza*/
         #tabellacliente{
-            margin-top: 15%;
-            padding-left: 30%;
+            margin-top: 30%;
+            padding-left: 0;
             margin-left: -20%;
             text-align: center;
             color: black;
@@ -328,36 +530,26 @@ ul#menu {
             width: 100%;
         }
         
-
+        /*impostazioni per la tabella*/
         table, thead, tbody, th, td, tr {
         display: block;
         }
         
-        
-
-        table tr td{
-        border:0;
+        /*nascondo le intestazioni della tabella*/
+        #Intestazioni{
+            display:none;
         }
         
-
-        thead tr {
-        position: absolute;    /* Nascondiamo la testata */
-        top: -9999px;
-        left: -9999px;
-        }
-        
-        
-
+        /*mi creo lo spazio per inserire nuove intestazioni*/
         td {
-        position: relative;     /* Creiamo lo spazio per l'intestazione */
+        position: relative; 
         padding-left: 50%;
-        border:0;
         }
         
         
-
+        /*creo le celle per la descrizione*/
         td:before { 	
-        position: absolute;			/* Creiamo le altre celle per la descrizione */
+        position: absolute;			
         top: 0px;
         left: 0px;
         width: 100%;  
@@ -367,18 +559,62 @@ ul#menu {
         }
         
         
-
-        td:nth-of-type(1):before { content: "Oggetto"; } /* inseriamo l'etichetta per ciascuna cella con il selettore nth-of-type */
-        td:nth-of-type(2):before { content: "Foto"; }
-        td:nth-of-type(3):before { content: "Pezzi"; }
-        td:nth-of-type(4):before { content: "Sito Web"; }
-        td:nth-of-type(5):before { content: "Prezzo"; }
-        td:nth-of-type(6):before { content: "Aggiungi al Carrello"; }
+        /*aggiungo nuove intestazioni*/
+        td:nth-of-type(1):before {
+            content: "Oggetto";
+        }
+        td:nth-of-type(2):before {
+            content: "Foto";
+        }
+        td:nth-of-type(3):before {
+            content: "Pezzi"; 
+        }
+        td:nth-of-type(4):before { 
+            content: "Prezzo"; 
+        }
+        td:nth-of-type(5):before { 
+            content: "Aggiungi al Carrello";
+            display:block;
+            width: auto;
+        }
         
-        #AreaVenditore{
-            top: 40%;
+        /*impostazioni per le righe pari o dispari, colore di sfondo, stile dei 
+        bordi, colore dei bordi, angolo dei bordi*/
+        #tabellacliente tr:nth-child(even) {
+	background-color: royalblue;
+        border-style: dashed;
+        border-color: darkblue;
+        border-radius: 20px;
+        }
+        #tabellacliente tr:nth-child(odd) {
+	background-color: darkblue;
+        color:aquamarine;
+        border-style: dotted;
+        border-color: royalblue;
+        border-radius: 20px;
+        }
+        /*impostazioni dei margini per le righe della tabellacliente*/
+        #tabellacliente tr{
+            margin-bottom: 50px;
+            margin-top: 10px;
+        }
+        /*impostazioni per i margini delle righe*/
+        #tabellacliente td{
+            margin-bottom:20px;
             
         }
+        
+        /*impostazioni per i margini della tabella*/
+        #tabellacliente{
+            margin-left:0px;
+        }
+        
+        /*impostazioni per il form dell'area venditore'*/
+        #AreaVenditore{
+            top: 40%;
+        }
+        /*impostazioni per le etichette e per l'input dell' AreaVenditore, 
+        margini, bordi, allineamento del testo, lunghezza*/
         #AreaVenditore label ,#AreaVenditore input{
             margin-bottom: 5%;
             border-radius: 50px;
@@ -386,6 +622,7 @@ ul#menu {
             width: 100%;
             margin-left: auto;
         }
-
-}
+        }
+        
+            
     
