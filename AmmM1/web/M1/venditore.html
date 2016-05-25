@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marco Cauli">
+        <meta name="description" content="Area di caricamento dell'oggetto">
+        <meta name="keywords" content="vendita, inserzioni, elettronica">
+    </head>
+    <body>
+        <h1> Area Venditore: </h1>
+        <!-- AREA DI NAVIGAZIONE IMPLEMENTATA CON LISTA-->
+        <nav> 
+            <ul>
+            <li> Ritorno alla pagina di Descrizione: <a href='descrizione.html'> Descrizione</a></li>
+            <li> Ritorno alla pagina di Log-in <a href='login.html'> Log-in</a></li>
+            </ul>
+        </nav>
+        <!-- FORM UTILIZZATO PER RICHIEDERE I PARAMETRI DELL'OGGETTO CHE SI 
+        VUOLE METTERE IN VENDITA E INVIO TRAMITE SUBMIT-->
+        <form action="venditore.html" method="post">
+                <div>
+                    <label for="name"> Inserire nome oggetto:</label>
+                    <input type="text" name="name"
+                         id="name" value=""/>
+                </div>
+                <div>
+                    <label for="url"> Inserire URL dell'immagine dell'oggetto:</label>
+                    <input type="url" name="url"
+                        id="url"/>
+                </div>
+                <div>
+                    <label for='descrizione'> Inserire descrizione dell'oggetto:</label>
+                    <textarea rows='5' cols='40' name='descrizione' id='descrizione'></textarea>
+                </div>
+                <div>
+                    <label for='prezzo'> Inserire il prezzo dell'oggetto:</label>
+                    <input type="number" name="prezzo"
+                        id="prezzo" value=""/>
+                </div>
+                <div>
+                    <label for='npezzi'> Inserire il numero dei pezzi in vendita:</label>
+                    <input type="number" name="npezzi"
+                        id="npezzi" value=""/>
+                </div>
+                <div>
+                    <input type="submit" value="Aggiungi Oggetto">
+                </div>
+            </form>
+        
+    </body>
+</html>
