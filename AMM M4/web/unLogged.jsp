@@ -1,6 +1,6 @@
 <%-- 
-    Document   : venditorenonautorizzato
-    Created on : 2-mag-2016, 11.02.19
+    Document   : unLogged
+    Created on : 2-mag-2016, 11.15.21
     Author     : Marco
 --%>
 
@@ -9,20 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="M3/css/style.css" rel="stylesheet" type="text/css">
         <meta name="author" content="Marco Cauli">
         <meta name="description" content="Area di reindirizzamento">
         <meta name="keywords" content="login, logout, redirect, e-commerce">
-        <link href="M3/css/style.css" rel="stylesheet" type="text/css">
-        
-        <title>  NON SEI AUTORIZZATO!!  </title>
+        <title>NON LOGGATO</title>
     </head>
     <body>
-        
-        <h1 id="header"> ERRORE </h1>
+        <h1 id="header">Attenzione!</h1>
         <jsp:include page="menu.jsp"/>
-        <div class="generic"> 
-            <p>non sei autorizzato a entrare in questa pagina. Prima ti devi Loggare</p>
-        <a href="login.jsp">VAI AL LOGIN</a>
+        <div class="generic">
+            <p>sei uscito dal tuo account </p>
+        <a href="descrizione.jsp">VAI ALLA DESCRIZIONE</a>
         </div>
     </body>
 </html>

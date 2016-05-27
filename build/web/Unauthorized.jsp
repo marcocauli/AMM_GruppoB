@@ -14,7 +14,7 @@
         <meta name="keywords" content="login, logout, redirect, e-commerce">
         <link href="M3/css/style.css" rel="stylesheet" type="text/css">
         
-        <title>NON SEI AUTORIZZATO!!</title>
+        <title>  NON SEI AUTORIZZATO!!  </title>
     </head>
     <body>
         
